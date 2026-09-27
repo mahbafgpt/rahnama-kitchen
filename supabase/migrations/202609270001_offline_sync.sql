@@ -1,4 +1,5 @@
 -- Run once in a Supabase project. All application access goes through authenticated RPCs.
+begin;
 create table public.kitchen_workspaces (
   id uuid primary key default gen_random_uuid(),
   name text not null check (length(trim(name)) between 2 and 100),
@@ -156,3 +157,4 @@ end $$;
 
 revoke all on function public.kitchen_create_workspace(text),public.kitchen_list_workspaces(),public.kitchen_create_invite(uuid),public.kitchen_join_workspace(uuid),public.kitchen_apply_batch(uuid,uuid,jsonb),public.kitchen_pull_changes(uuid,bigint,integer) from public,anon;
 grant execute on function public.kitchen_create_workspace(text),public.kitchen_list_workspaces(),public.kitchen_create_invite(uuid),public.kitchen_join_workspace(uuid),public.kitchen_apply_batch(uuid,uuid,jsonb),public.kitchen_pull_changes(uuid,bigint,integer) to authenticated;
+commit;
