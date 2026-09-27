@@ -1,4 +1,3 @@
-// Fill these after creating the Supabase project. The publishable key is safe
-// in a browser only because the database migration enforces access on every RPC.
-export const SUPABASE_URL='';
-export const SUPABASE_PUBLISHABLE_KEY='';
+// This browser key is publishable. Workspace access is enforced by Supabase RPCs.
+export const SUPABASE_URL='https://xxhtjfqfqssqzqikybtw.supabase.co';
+export const SUPABASE_PUBLISHABLE_KEY='sb_publishable_vy5sayPN7lObGQOOby2ljQ_8qtSFEty';
