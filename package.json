@@ -1,0 +1,1 @@
+{"name":"rahnama-kitchen","private":true,"type":"module","version":"0.2.0","description":"Offline kitchen, inventory and purchasing management","scripts":{"test":"node tests/domain.test.mjs"}}
