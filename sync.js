@@ -1,5 +1,5 @@
-import * as db from './db.js';
-import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY} from './config.js';
+import * as db from './db.js?v=admin-20260928b';
+import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY} from './config.js?v=admin-20260928b';
 
 const SESSION_KEY='rahnama-cloud-session';
 const INTERVAL_MS=5*60*1000;

@@ -1,9 +1,9 @@
-import * as db from './db.js';
+import * as db from './db.js?v=admin-20260928b';
 import {uid,now,number,money,setCurrency,date,escape,unitLabels,units,planNeeds,shortageRows,suggestions,recipeNeeds,round,toBase} from './domain.js';
 import {exportData,download} from './export.js';
 import {icon} from './icons.js';
-import * as sync from './sync.js';
-import {ADMIN_USERNAME,ADMIN_AUTH_EMAIL,ADMIN_DISPLAY_NAME} from './config.js';
+import * as sync from './sync.js?v=admin-20260928b';
+import {ADMIN_USERNAME,ADMIN_AUTH_EMAIL,ADMIN_DISPLAY_NAME} from './config.js?v=admin-20260928b';
 
 const app=document.querySelector('#app'),overlay=document.querySelector('#overlay'),toastBox=document.querySelector('#toast');
 const state={page:'dashboard',search:'',sort:'name',desc:false,pageNum:1,perPage:8,data:null,user:null,drawer:false,sync:null,cloudWorkspaces:[]};
