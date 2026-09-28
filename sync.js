@@ -1,4 +1,4 @@
-import * as db from './db.js?v=inventory-20260928a';
+import * as db from './db.js?v=personnel-20260928a';
 import {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY} from './config.js?v=admin-20260928b';
 
 const SESSION_KEY='rahnama-cloud-session';
