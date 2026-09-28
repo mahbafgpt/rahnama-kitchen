@@ -1,4 +1,4 @@
-const CACHE='rahnama-v7';
+const CACHE='rahnama-v8';
 const ASSETS=['./','./index.html','./styles.css','./theme.css','./fonts/Vazirmatn.woff2','./main.js','./sync.js','./config.js','./icons.js','./db.js','./domain.js','./export.js','./icon.svg','./manifest.webmanifest'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
